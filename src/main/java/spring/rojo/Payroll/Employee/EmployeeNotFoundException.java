@@ -1,4 +1,4 @@
-package spring.rojo.Payroll;
+package spring.rojo.Payroll.Employee;
 
 class EmployeeNotFoundException extends RuntimeException {
 

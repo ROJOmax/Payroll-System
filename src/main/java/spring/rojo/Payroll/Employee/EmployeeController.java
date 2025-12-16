@@ -1,15 +1,14 @@
-package spring.rojo.Payroll;
+package spring.rojo.Payroll.Employee;
 
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.hateoas.EntityModel;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -137,7 +136,6 @@ class EmployeeController {
     ResponseEntity<?> deleteEmployee(@PathVariable Long id) {
 
         repository.deleteById(id);
-
         return ResponseEntity.noContent().build();
     }
 
