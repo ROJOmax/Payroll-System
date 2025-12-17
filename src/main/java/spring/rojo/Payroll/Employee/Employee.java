@@ -1,12 +1,15 @@
     package spring.rojo.Payroll.Employee;
 
 
-    import jakarta.persistence.Entity;
-    import jakarta.persistence.GeneratedValue;
-    import jakarta.persistence.Id;
+    import jakarta.persistence.*;
 
     import java.util.Objects;
 
+    // Source - https://stackoverflow.com/a
+// Posted by 123
+// Retrieved 2025-12-17, License - CC BY-SA 4.0
+
+    @SequenceGenerator(name = "employee_generator", sequenceName = "employee_seq", allocationSize = 1)
     @Entity
     public class Employee {
         private  @Id

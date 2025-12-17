@@ -1,13 +1,12 @@
 package spring.rojo.Payroll.Order;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.Objects;
 
+
+@SequenceGenerator(name = "customer_generator", sequenceName = "customer_order_seq", allocationSize = 1)
 @Entity
 @Table(name = "CUSTOMER_ORDER")
 public class Order {
